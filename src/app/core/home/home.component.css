@@ -1,0 +1,44 @@
+.bimageclass { 
+    background: url("../../../assets/background.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 300px;
+}
+
+.custom-a {
+    display: block;
+    width:180px;
+    margin-top:20px;
+}
+
+.custom-div {
+    margin:40px;
+}
+
+@media (min-width: 900px){
+    
+    .custom-blockquote {
+    margin-left:150px;
+    margin-right:150px;
+    margin-top:50px;
+}
+
+}
+
+@media (max-width: 900px){
+    
+    .custom-blockquote {
+    margin-top:50px;
+}   
+ 
+}
+
+.header-button {
+    margin-top:30px;
+}
+
+.topheading {
+    color: saddlebrown;
+}

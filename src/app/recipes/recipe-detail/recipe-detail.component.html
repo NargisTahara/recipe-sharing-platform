@@ -1,0 +1,47 @@
+
+<div class="row">
+  <div class="col-xs-12">
+    <h2>{{ recipe.name }}</h2>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <div
+      class="btn-group"
+      appDropdown>
+      <button
+        type="button"
+        class="btn btn-primary dropdown-toggle">
+        Manage Recipe <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu">
+        <li><a style="cursor: pointer;" (click)="onEditRecipe()">Edit Recipe</a></li>
+        <li><a style="cursor: pointer;" (click)="onDeleteRecipe()">Delete Recipe</a></li>
+      </ul>
+    </div>
+  </div>
+</div>  
+<div class="row">
+  <div class="col-xs-12">
+    <h3>Author:</h3>
+    <a [href]="recipe.authorLink">{{ recipe.authorName }}</a>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <h3>Ingredients:</h3>
+    <ul class="list-group">
+      <li
+        class="list-group-item"
+        *ngFor="let ingredient of recipe.ingredients">
+        {{ ingredient.amount }} <b>{{ ingredient.name }}</b>
+      </li>
+    </ul>
+  </div>
+</div>  
+<div class="row">
+  <div class="col-xs-12">
+    <h3>Method:</h3>
+    <span class="multilinetext">{{ recipe.description }}</span>
+  </div>
+</div>
